@@ -15,6 +15,7 @@ class CarsTest < ApplicationSystemTestCase
     click_on "New Car"
 
     fill_in "Make", with: @car.make
+    fill_in "Model", with: @car.model
     fill_in "Year", with: @car.year
     click_on "Create Car"
 
@@ -27,6 +28,7 @@ class CarsTest < ApplicationSystemTestCase
     click_on "Edit", match: :first
 
     fill_in "Make", with: @car.make
+    fill_in "Model", with: @car.model
     fill_in "Year", with: @car.year
     click_on "Update Car"
 
